@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>向用户发货</title>
+		<link type="text/css" rel="stylesheet" href="dist/css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
+		<script type="text/javascript" src="dist/js/fontSize.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions				: [ 'effect-slide-menu', 'shadow-page', 'shadow-panels' ],
+					keyboardNavigation 		: true,
+					screenReader 			: true,
+					counters				: true,
+					navbar 	: {
+						title	: '崇原'
+					},
+					navbars	: [
+						{
+							position	: 'right',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'right',
+							content		: [
+								'prev',
+								'title',
+								'close'
+							]
+						}, {
+							position	: 'bottom',
+							content		: [
+								'<a href="index.html">崇原</a>'
+							]
+						}
+					]
+				});
+			});
+		</script>
+	</head>
+	<body>
+			<div class="header">
+				<img src="dist/img/logo.png" alt="" class="logo">
+				<a href="#menu" class="nav_btn"><span></span></a>
+				向用户发货
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">总代理</a></li>
+					<li><span>关于我们</span>
+						<ul>
+							<li><a href="#about/history">历史追溯</a></li>
+							<li><span>团队</span>
+								<ul>
+									<li><a href="#about/team/management">销售人员</a></li>
+									<li><a href="#about/team/sales">产品</a></li>
+									<li><a href="#about/team/development">开发人员</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#contact">联系我们</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+        <form action="user_commit.html">
+          <div class="register first">
+            <input type="number" placeholder="请输入盒数">
+          </div>
+          <div class="register last">
+            <input type="submit" class="submit" value="确定">
+          </div>
+        </form>
+			</div>
+			<div class="footer fixed">
+				<div class="item">
+					<a href="index.html"><span class="iconfont">&#xe607;</span>代理后台</a>
+				</div>
+				<div class="item last">
+					<a href=""><span class="iconfont">&#xe610;</span>追溯系统</a>
+				</div>
+			</div>
+	</body>
+</html>

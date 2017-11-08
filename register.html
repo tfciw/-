@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>注册</title>
+		<link type="text/css" rel="stylesheet" href="dist/css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
+		<script type="text/javascript" src="dist/js/fontSize.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions				: [ 'effect-slide-menu', 'shadow-page', 'shadow-panels' ],
+					keyboardNavigation 		: true,
+					screenReader 			: true,
+					counters				: true,
+					navbar 	: {
+						title	: '崇原'
+					},
+					navbars	: [
+						{
+							position	: 'right',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'right',
+							content		: [
+								'prev',
+								'title',
+								'close'
+							]
+						}, {
+							position	: 'bottom',
+							content		: [
+								'<a href="index.html">崇原</a>'
+							]
+						}
+					]
+				});
+			});
+		</script>
+	</head>
+	<body>
+			<div class="header">
+				<img src="dist/img/logo.png" alt="" class="logo">
+				<a href="#menu" class="nav_btn"><span></span></a>
+				注册
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">总代理</a></li>
+					<li><span>关于我们</span>
+						<ul>
+							<li><a href="#about/history">历史追溯</a></li>
+							<li><span>团队</span>
+								<ul>
+									<li><a href="#about/team/management">销售人员</a></li>
+									<li><a href="#about/team/sales">产品</a></li>
+									<li><a href="#about/team/development">开发人员</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#contact">联系我们</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+        <form action="">
+          <div class="register first">
+            <input type="text" placeholder="请输入真实姓名">
+          </div>
+          <div class="register">
+            <input type="text" placeholder="请输入身份证号">
+          </div>
+          <div class="register">
+            <input type="text" placeholder="请输入收货地址">
+          </div>
+          <div class="register">
+            <input type="text" placeholder="请输入微信号">
+          </div>
+          <div class="register last">
+            <input type="submit" class="submit" value="同意服务条款并注册">
+          </div>
+          <a href="" class="rule">《崇原代理注册服务条款》</a>
+        </form>
+				<div class="mask" id="mask">
+					<h3>代理商营业守则（试行）</h3>
+					<h3>一、总则</h3>
+					<p>为规范市场，保护代理商的合法权益，营造能给代理商带来长期效益的有利环境，反对恶性竞争，打击乱价、窜货等违规行为，特制订本制度。
+							四川抱朴生物科技有限公司(以下简称“公司”)可按市场情况及需要和国家政策的要求修订有关代理商的各项纪律及产品业务政策，有关修订将通过公司官方网站和官方微信等途径公布或其他方式通知代理商，代理商应自动接受并遵守该调整。</p>
+					<h3>二、范围</h3>
+					<p>本制度适用于公司各级代理商。</p>
+					<h3>三、细则</h3>
+					<p>1、代理商初次申请所提交的资料必须真实、有效；不得借用、冒用他人名义或使用其他不正当方法成为公司代理商；如申请人提供不真实或不符合公司要求的资料或用不正当方法而成为公司代理商，公司保留一经发现即对其做出处理(包括立即注销代理商资格)的权利。<br>
+						2、代理商授权期限届满，原则上可自动续期，若代理商在授权期限内出现任何违规行为，公司有权决定是否与代理商续约。<br>
+						3、各级代理商要严格执行公司统一规定的价格政策、包括各级代理价和统一零售价，公司产品不得作为任何形式的赠品出现。<br>
+						4、各级代理商必须从自己注册的上级代理商处进货，从其他渠道进货视为违规窜货。<br>
+						5、公司产品不得在任何未经授权的第三方网络平台(包括淘宝、天猫、京东、微店等所有电商平台)进行线上销售。<br>
+						6、凡出现乱价、窜货及在未授权第三方网络平台销售等违规行为被公司稽查部门查获核实，总代以下各级代理商首次违规将给予警告处分，并按产品销售金额予以罚款且终身不得晋升总代；二次违规，公司将解除其代理商资格。总代理商首次违规，给予警告一次并按产品销售金额的10倍予以罚款，若继续二次违规且情节严重的，公司将取消其总代理商资格，且终身不得再次晋升。<br>
+						7、代理商权益受到侵害时，须以书面形式(发送至公司联系邮箱)向公司提出投诉及维权要求。自侵权行为发生之日起十二个月之内未向公司提出的，公司保留不予受理的权利。<br>
+						8、代理商收货地址、电话、微信等相关信息变更的，应及时通知公司更新，否则自行承担信息不准确而导致的后果。</p>
+						<a href="javascript:;" id="btn" class="iconfont">&#xe726;</a>
+				</div>
+				<script type="text/javascript">
+					window.onload = function(){
+						var oRule = document.getElementById('rule');
+						var oMask = document.getElementById('mask');
+						var oBtn = document.getElementById('btn');
+						oRule.onclick = function(){
+							oMask.style.display = 'block';
+						}
+						oBtn.onclick = function(){
+							oMask.style.display = 'none';
+						}
+					}
+				</script>
+			</div>
+			<div class="footer fixed">
+				<div class="item">
+					<a href="index.html"><span class="iconfont">&#xe607;</span>代理后台</a>
+				</div>
+				<div class="item last">
+					<a href=""><span class="iconfont">&#xe610;</span>追溯系统</a>
+				</div>
+			</div>
+	</body>
+</html>

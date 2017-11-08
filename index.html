@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>总代理</title>
+		<link type="text/css" rel="stylesheet" href="dist/css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
+		<script type="text/javascript" src="dist/js/fontSize.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions				: [ 'effect-slide-menu', 'shadow-page', 'shadow-panels' ],
+					keyboardNavigation 		: true,
+					screenReader 			: true,
+					counters				: true,
+					navbar 	: {
+						title	: '崇原'
+					},
+					navbars	: [
+						{
+							position	: 'right',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'right',
+							content		: [
+								'prev',
+								'title',
+								'close'
+							]
+						}, {
+							position	: 'bottom',
+							content		: [
+								'<a href="index.html">崇原</a>'
+							]
+						}
+					]
+				});
+			});
+		</script>
+	</head>
+	<body>
+			<div class="header">
+				<img src="dist/img/logo.png" alt="" class="logo">
+				<a href="#menu" class="nav_btn"><span></span></a>
+				首页
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">总代理</a></li>
+					<li><span>关于我们</span>
+						<ul>
+							<li><a href="#about/history">历史追溯</a></li>
+							<li><span>团队</span>
+								<ul>
+									<li><a href="#about/team/management">销售人员</a></li>
+									<li><a href="#about/team/sales">产品</a></li>
+									<li><a href="#about/team/development">开发人员</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#contact">联系我们</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+				<div class="clear"></div>
+				<div class="data">
+					<ul>
+						<li>
+								<span class="cn c_orange">本月指标</span>
+								<a href="">
+									<p class="btn c_orange_bg">0 箱</p>
+							</a>
+						</li>
+						<li>
+							<span class="cn c_blue">本月销量</span>
+							<a href="">
+								<p class="btn c_blue_bg">0 箱</p>
+							</a>
+						</li>
+						<li>
+							<span class="cn ">昨日新增代理商</span>
+							<a href="">
+								<p class="btn c_green_bg">0 位</p>
+							</a>
+						</li>
+						<li>
+							<span class="cn ">总计代理商数量</span>
+							<a href="">
+								<p class="btn c_redc_bg">0 位</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<!-- 修改的地方 -->
+				<div class="order_lj">
+					<p class="order_top">
+						<a href=""><img src="dist/img/order_lj_03.png" alt="" class="i3"></a>
+						<a href=""><img src="dist/img/order_lj_06.png" alt="" class="i6"></a>
+					</p>
+					<ul>
+						<li><a href=""><img src="dist/img/order_lj_11.png" alt=""></a></li>
+						<li><a href=""><img src="dist/img/order_lj_13.png" alt=""></a></li>
+						<li><a href=""><img src="dist/img/order_lj_15.png" alt=""></a></li>
+						<li><a href=""><img src="dist/img/order_lj_17.png" alt=""></a></li>
+					</ul>
+				</div>
+				<!-- 修改的地方 -->
+				<div class="clear"></div>
+				<a href="quode_img.html">
+					<div class="nav">
+						<span class="iconfont c_bluec_bg">&#xe690;</span>
+						<span>微信代理授权</span>
+						<span class="arrow">></span>
+					</div>
+				</a>
+				<a href="agent_next.html">
+					<div class="nav">
+						<span class="iconfont c_pink_bg">&#xe601;</span>
+						<span style="color:red;">下级代理生成</span>
+						<span class="arrow">></span>
+					</div>
+				</a>
+				<a href="agent.html">
+					<div class="nav">
+						<span class="iconfont c_orange_bg">&#xe64d;</span>
+						<span class="cn">下级代理查看</span>
+						<span class="arrow">></span>
+					</div>
+				</a>
+				<a href="application.html">
+					<div class="nav">
+						<span class="iconfont c_pinkc_bg">&#xe717;</span>
+						<span>代理申请管理</span>
+						<span class="arrow">></span>
+					</div>
+				</a>
+				<a href="agent.html">
+					<div class="nav">
+						<span class="iconfont c_brown_bg">&#xe60b;</span>
+						<span>给代理发货</span>
+						<span class="arrow">></span>
+					</div>
+				</a>
+				<div class="clear"></div>
+			</div>
+			<div class="footer fixed">
+				<div class="item footer_one">
+					<a href=""><img src="dist/img/footer_03.png" alt=""></a>
+				</div>
+				<div class="item footer_two">
+					<a href=""><img src="dist/img/footer_05.png" alt=""></a>
+				</div>
+				<div class="item footer_three">
+					<a href=""><img src="dist/img/footer_07.jpg" alt=""></a>
+				</div>
+			</div>
+	</body>
+</html>

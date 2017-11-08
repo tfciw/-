@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>所有订单</title>
+		<link type="text/css" rel="stylesheet" href="dist/css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
+		<script type="text/javascript" src="dist/js/fontSize.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions				: [ 'effect-slide-menu', 'shadow-page', 'shadow-panels' ],
+					keyboardNavigation 		: true,
+					screenReader 			: true,
+					counters				: true,
+					navbar 	: {
+						title	: '崇原'
+					},
+					navbars	: [
+						{
+							position	: 'right',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'right',
+							content		: [
+								'prev',
+								'title',
+								'close'
+							]
+						}, {
+							position	: 'bottom',
+							content		: [
+								'<a href="index.html">崇原</a>'
+							]
+						}
+					]
+				});
+			});
+		</script>
+	</head>
+	<body>
+			<div class="header">
+				<img src="dist/img/logo.png" alt="" class="logo">
+				<a href="#menu" class="nav_btn"><span></span></a>
+				所有订单
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">总代理</a></li>
+					<li><span>关于我们</span>
+						<ul>
+							<li><a href="#about/history">历史追溯</a></li>
+							<li><span>团队</span>
+								<ul>
+									<li><a href="#about/team/management">销售人员</a></li>
+									<li><a href="#about/team/sales">产品</a></li>
+									<li><a href="#about/team/development">开发人员</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#contact">联系我们</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+        <div class="search">
+					<form action="">
+						<input type="text" class="input" placeholder="输入代理微信名，手机号搜索">
+						<input type="submit" class="submit iconfont" value="&#xe621;">
+					</form>
+				</div>
+        <div class="order_btn">
+          <p class="btn ">待发货</p>
+          <p class="btn ">已发货</p>
+          <p class="btn last">已成功</p>
+        </div>
+				<div class="page">
+					<a href="">首页</a><a href="" class="on">1</a><a href="">[2]</a><a href="">[3]</a><a href="">[4]</a><a href="">[4]</a><a href="">[4]</a><a href="">[4]</a><a href="">[4]</a><a href="">[4]</a><a href="">[4]</a><a href="">末页</a>
+				</div>
+        <ul class="order_list">
+          <li>
+            <span class="iconfont">&#xe705;</span>
+            <span class="cn">订单号：lucky1231313</span>
+            <span class="num">盒数：3</span>
+            <span class="city">上级：四个字的</span>
+            <span class="sta">下级：四个字的</span>
+						<a href="order_info.html"><p class="btn">查</p></a>
+          </li>
+					<li>
+            <span class="iconfont">&#xe66f;</span>
+            <span class="cn">订单号：lucky1231313</span>
+            <span class="num">盒数：3</span>
+            <span class="city">上级：四个字的</span>
+            <span class="sta">下级：四个字的</span>
+						<a href="order_info.html"><p class="btn">查</p></a>
+          </li>
+					<li>
+            <span class="iconfont">&#xe691;</span>
+            <span class="cn">订单号：lucky1231313</span>
+            <span class="num">盒数：3</span>
+            <span class="city">上级：四个字的</span>
+            <span class="sta">下级：四个字的</span>
+						<a><p class="btn">废</p></a>
+						<span class="iconfont abandon">&#xe61c;</span>
+          </li>
+          <li>
+            <span class="iconfont">&#xe60d;</span>
+						<span class="cn">订单号：lucky1231313</span>
+            <span class="num">盒数：3</span>
+            <span class="city">上级：四个字的</span>
+            <span class="sta">下级：四个字的</span>
+						<a href="order_info.html"><p class="btn">查</p></a>
+          </li>
+          <li>
+            <span class="iconfont">&#xe725;</span>
+						<span class="cn">订单号：lucky1231313</span>
+            <span class="num">盒数：3</span>
+            <span class="city">上级：四个字的</span>
+            <span class="sta">下级：四个字的</span>
+						<a href="order_info.html"><p class="btn">查</p></a>
+          </li>
+          <li>
+            <span class="iconfont">&#xe60d;</span>
+						<span class="cn">订单号：lucky1231313</span>
+            <span class="num">盒数：3</span>
+            <span class="city">上级：四个字的</span>
+            <span class="sta">下级：四个字的</span>
+						<a href="order_info.html"><p class="btn">查</p></a>
+          </li>
+        </ul>
+			</div>
+			<div class="footer fixed">
+				<div class="item">
+					<a href="index.html"><span class="iconfont">&#xe607;</span>代理后台</a>
+				</div>
+				<div class="item last">
+					<a href=""><span class="iconfont">&#xe610;</span>追溯系统</a>
+				</div>
+			</div>
+	</body>
+</html>
